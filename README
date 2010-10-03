@@ -1,0 +1,88 @@
+----------INSTRUCTION
+
+Kiedy blok zostanie upuszczony:
+* powinien pojawic sie na srodkowej pozycji górnego wiersza
+    .X.\n
+    ...\n
+    ...\n
+	
+* powinien opadac w dol o jeden wiersz z kazdym wywolaniem metody (board.tick()?)
+    ...\n
+    .X.\n
+    ...\n
+
+* Dwa bloki nie moga opadac w tej samej chwili (board.tick()?)
+    ...\n
+    .X.\n
+    ...\n
+	
+Kiedy blok dotrze na sam dól
+* Gracz nadal moze przesuwac blok w prawo i w lewo
+board.hasFailing => true
+
+* Po opadnieciu gracz nie moze poruszac spadajacym blokiem
+board.tick()
+board.hasFailing => false
+
+Kiedy blok opadne na inny blok
+
+* Gracz nadal moze przesuwac blok w prawo i w lewo
+board.hasFailing => true
+
+* Po opadnieciu gracz nie moze poruszac spadajacym blokiem
+board.tick()
+board.hasFailing => false
+
+Kiedy dolny wiersz jest wypelniony blokami
+
+* dolny wiersz jest kasowany a bloki znajdujace sie wyzej spadaja w dol
+
+    ...\n
+    .X.\n
+    XXX\n
+	
+	...\n
+    ...\n
+    .X.\n
+
+Punktacja
+
+* Po kazym skasowanym wierszu przez gracza jest dodawane 10 punktow do punktacji
+------------------------------------------------
+
+Zaimplementuj figury tetromino zamiast pojedynczych bloków, zaimplementuj dla nich rotacje w lewo i w prawo
+   I_SHAPE
+    ....\n
+    IIII\n
+    ....\n
+	
+    J_SHAPE
+    ..J\n
+    JJJ\n
+    ...\n
+	
+    L_SHAPE
+    L..\n
+    LLL\n
+    ...\n
+	
+   O_SHAPE
+   .OO\n
+   .OO\n
+   ...\n
+   
+   S_SHAPE
+    ...\n
+    .SS\n
+    SS.\n
+	
+   T_SHAPE
+   .T.\n
+   TTT\n
+   ...\n
+   
+   Z_SHAPE
+   ...\n
+   ZZ.\n
+   .ZZ\n
+
