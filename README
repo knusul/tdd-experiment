@@ -6,32 +6,37 @@ Kiedy blok zostanie upuszczony:
     ...\n
     ...\n
 	
-* powinien opadac w dol o jeden wiersz z kazdym wywolaniem metody (board.tick()?)
+* powinien opadac w dol co jeden wiersz.
     ...\n
     .X.\n
     ...\n
 
-* Dwa bloki nie moga opadac w tej samej chwili (board.tick()?)
+* Dwa bloki nie moga opadac w tej samej chwili
     ...\n
     .X.\n
     ...\n
 	
 Kiedy blok dotrze na sam dól
 * Gracz nadal moze przesuwac blok w prawo i w lewo
-board.hasFailing => true
+    ...\n     ...\n
+    ...\n  => ...\n
+    .X.\n     X..\n
 
+    ...\n     ...\n
+    .X.\n  => ...\n
+    ...\n     ..X\n
+	
+	
 * Po opadnieciu gracz nie moze poruszac spadajacym blokiem
-board.tick()
-board.hasFailing => false
+
 
 Kiedy blok opadne na inny blok
 
 * Gracz nadal moze przesuwac blok w prawo i w lewo
-board.hasFailing => true
 
-* Po opadnieciu gracz nie moze poruszac spadajacym blokiem
-board.tick()
-board.hasFailing => false
+
+* Po opadnieciu na innym bloku gracz nie moze poruszac spadajacym blokiem
+
 
 Kiedy dolny wiersz jest wypelniony blokami
 
@@ -45,10 +50,12 @@ Kiedy dolny wiersz jest wypelniony blokami
     ...\n
     .X.\n
 
-Punktacja
+Punktowanie
 
-* Po kazym skasowanym wierszu przez gracza jest dodawane 10 punktow do punktacji
-------------------------------------------------
+* Po kazym skasowanym wierszu przez gracza dodawane jest 10 punktow do punktacji
+
+
+Czesc II
 
 Zaimplementuj figury tetromino zamiast pojedynczych bloków, zaimplementuj dla nich rotacje w lewo i w prawo
    I_SHAPE
