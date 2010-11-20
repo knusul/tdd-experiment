@@ -1,4 +1,4 @@
-----------INSTRUCTION
+----------INSTRUKCJA
 
 Kiedy blok zostanie upuszczony:
 * powinien pojawic sie na srodkowej pozycji górnego wiersza
@@ -16,24 +16,24 @@ Kiedy blok zostanie upuszczony:
     .X.\n
     ...\n
 	
-Kiedy blok dotrze na sam dól
+Kiedy blok znajduje sie nad podloga
 * Gracz nadal moze przesuwac blok w prawo i w lewo
     ...\n     ...\n
     ...\n  => ...\n
     .X.\n     X..\n
 
-    ...\n     ...\n
-    .X.\n  => ...\n
-    ...\n     ..X\n
-	
 	
 * Po opadnieciu gracz nie moze poruszac spadajacym blokiem
 
 
-Kiedy blok opadne na inny blok
+Kiedy blok znajduje sie nad innym blokiem
 
 * Gracz nadal moze przesuwac blok w prawo i w lewo
 
+    ...\n     ...\n
+    .X.\n  => ..X\n
+    .X.\n     .X.\n
+	
 
 * Po opadnieciu na innym bloku gracz nie moze poruszac spadajacym blokiem
 

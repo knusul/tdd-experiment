@@ -3,5 +3,6 @@
 3. Uruchom task maven'a mvn eclipse:eclipse, który utworzy pliki projektu eclipse .classpath oraz .project w katalogu projektu. 
 4. Pod eclipse zaimportuj projekt. File ->Import->(General)Existing projects into Workspace w select root directory wybierz sciagniety folder. 
 5. Odpal test BoardTest.java powinien zapalic sie na zielono
-
+6. Wymagania zostaly ulozone tak aby mozna je bylo rozwiazywac jedno za drugim. 
+ 
 Powodzenia

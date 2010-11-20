@@ -10,6 +10,7 @@ public class Board {
         this.columns = columns;
     }
 
+	/* change me */
     public String toString() {
         String s = "";
         for (int row = 0; row < rows; row++) {
