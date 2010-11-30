@@ -11,7 +11,7 @@ public class BoardTest extends TestCase {
     private final Board board = new Board(3, 3);
 
 
-        public void testIs_empty() {
+        public void testShouldSetEmptyTableForNewBoard() {
             assertEquals("" +
                     "...\n" +
                     "...\n" +
